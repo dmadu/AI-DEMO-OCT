@@ -2,9 +2,9 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
+RUN apt-get update && apt-get install -y \
     libpq-dev \
+    gcc \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
@@ -14,4 +14,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python", "wsgi.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]
