@@ -1,16 +1,9 @@
-# Full Stack Application
+# Project Architecture - Users, Roles, and Permissions
 
-## Overview
-A complete production-ready application using React, Flask, and PostgreSQL orchestrated with Docker Compose.
+Full-stack application featuring Flask backend with SQLAlchemy and PostgreSQL, React frontend, and containerised via Docker Compose.
 
-## Getting Started
-
-To run the application using Docker Compose:
+## Setup and Running
 
 ```bash
-docker compose up --build
+docker-compose up --build
 ```
-
-- Frontend: `http://localhost:3000`
-- Backend API: `http://localhost:5000/api/health`
-- PostgreSQL: `localhost:5432`
