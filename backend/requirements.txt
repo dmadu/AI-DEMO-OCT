@@ -1,0 +1,10 @@
+Flask==3.0.2
+SQLAlchemy==2.0.27
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.5
+Flask-JWT-Extended==4.6.0
+Flask-Bcrypt==1.0.1
+psycopg2-binary==2.9.9
+Gunicorn==21.2.0
+Python-Dotenv==1.0.1
+Marshmallow==3.20.2
